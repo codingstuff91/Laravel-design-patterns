@@ -16,8 +16,6 @@ use App\Patterns\Strategy\LogToFile;
 use App\Patterns\TemplateMethod\BigMac;
 use App\Patterns\TemplateMethod\Burger;
 use App\Patterns\TemplateMethod\VeggieBigMac;
-use Illuminate\Container\Container;
-use Illuminate\Foundation\Inspiring;
 use Illuminate\Support\Facades\Artisan;
 
 Artisan::command('decorator', function () {
