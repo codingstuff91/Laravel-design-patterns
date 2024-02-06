@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Patterns\Decorator;
+namespace App\Patterns\Decorator\CarMaintenance;
 
 class BasicRevision implements CarService
 {
