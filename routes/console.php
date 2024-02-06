@@ -4,18 +4,13 @@ use App\Patterns\Builder\MargarithaBuilder;
 use App\Patterns\Builder\PizzaBuilder;
 use App\Patterns\Decorator\BasicInspectionAndBatteryChange;
 use App\Patterns\Decorator\BasicRevisionAndTechnicalControl;
-use App\Patterns\Decorator\CalculateMaintenanceCost;
+use App\Patterns\Decorator\CarMaintenance\CalculateMaintenanceCost;
 use App\Patterns\Decorator\RevisionCalculator;
 use App\Patterns\FactoryAndStrategy\RegisterFactory;
 use App\Patterns\Manager\PizzaManager;
-use App\Patterns\Manager\ExchangeRatesManager;
 use App\Patterns\Manager\SushiDeliveryManager;
 use App\Patterns\Strategy\App;
-use App\Patterns\Strategy\LogToDatabase;
-use App\Patterns\Strategy\LogToFile;
 use App\Patterns\TemplateMethod\BigMac;
-use App\Patterns\TemplateMethod\Burger;
-use App\Patterns\TemplateMethod\VeggieBigMac;
 use Illuminate\Support\Facades\Artisan;
 
 Artisan::command('decorator', function () {
@@ -47,10 +42,6 @@ Artisan::command('builder', function () {
 });
 
 Artisan::command('manager', function () {
-    /**
-     * Another example of manager and driver
-     * @see https://www.honeybadger.io/blog/laravel-manager-pattern/
-     */
 //    app(ExchangeRatesManager::class)
 //        ->driver('open-exchange-rates')
 //        ->exchangeRate(
