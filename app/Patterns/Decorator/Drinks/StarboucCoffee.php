@@ -7,7 +7,7 @@ use App\Patterns\Decorator\Drinks\Decorators\Chocolate;
 
 class StarboucCoffee
 {
-    public static function calculateOrderCost()
+    public function calculateOrderCost()
     {
         $beverage = new Cappucino();
         $supplement = new Chocolate($beverage);

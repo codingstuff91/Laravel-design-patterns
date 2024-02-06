@@ -15,11 +15,15 @@ use App\Patterns\TemplateMethod\BigMac;
 use Illuminate\Support\Facades\Artisan;
 
 Artisan::command('decorator', function () {
-//    $totalCost = (new CalculateMaintenanceCost())->getCost();
-//
-//    dd($totalCost);
+    /**
+     * Example with Car maintenance product
+     */
+//    echo (new CalculateMaintenanceCost())->getCost();
 
-    dd(StarboucCoffee::calculateOrderCost());
+    /**
+     * Example with beverages products
+     */
+//    echo (new StarboucCoffee)->calculateOrderCost();
 });
 
 Artisan::command('strategy', function () {
