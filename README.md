@@ -4,14 +4,23 @@ This project was made to practise and learn the main design patterns within a La
 
 ## Design patterns covered
 
-Here are the design patterns covered into this project
+### Strategy
+Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
 
-- Strategy
-- Builder
-- Decorator
-- Factory
-- Manager
-- Template_method
+### Builder
+Separate the construction of a complex object from its representation so that the same construction process can create different representations.
+
+### Manager
+A little variation of the design pattern Builder that uses Manager classes and Drivers to handle different creation processes.
+
+### Decorator
+Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
+
+### Factory
+Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
+
+### Template_method
+Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
 
 ## How to test the design patterns
 
