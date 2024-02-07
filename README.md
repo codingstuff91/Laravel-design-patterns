@@ -15,12 +15,15 @@ Here are the design patterns covered into this project
 
 ## How to test the design patterns
 
-Each design pattern can be tested with its own command available into the file `routes/console.php`.
+> [!IMPORTANT]
+> Each design pattern can be tested with its own command available into the file `routes/console.php`.
 
-Each command is named according to the design pattern name (for example : Strategy or Decorator) 
-To run an example pattern, you have to run an artisan command with the name of the pattern.
+These design patterns are explained with a basic example of the implementation of the solution provided by the design pattern. 
 
-For example for the `Builder` pattern you can execute the following command 
+To test these examples you have to execute a artisan php command which is named accordingly to the design pattern name.
+
+> [!NOTE]
+> For example for the `Builder` pattern you can execute the following command
 `php artisan builder`
 
 ### Resources and links
