@@ -2,7 +2,7 @@
 
 namespace App\Patterns\Behavioral\Strategy\TransportCostEstimator;
 
-class Bus implements Estimable
+class Bus implements CalculationStrategy
 {
     private const BUS_TICKET_PRICE = 3;
     public function travelCost(int $distance)

@@ -2,7 +2,7 @@
 
 namespace App\Patterns\Behavioral\Strategy\TransportCostEstimator;
 
-interface Estimable
+interface CalculationStrategy
 {
     public function travelCost(int $distance);
 }
