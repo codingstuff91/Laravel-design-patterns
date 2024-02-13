@@ -2,6 +2,7 @@
 
 use App\Patterns\Behavioral\Strategy\Logger\App;
 use App\Patterns\Behavioral\Strategy\Logger\LogToDatabase;
+use App\Patterns\Behavioral\Strategy\Logger\LogToFile;
 use App\Patterns\Behavioral\Strategy\TransportCostEstimator\Bus;
 use App\Patterns\Behavioral\Strategy\TransportCostEstimator\Transport;
 use App\Patterns\Behavioral\TemplateMethod\BigMac;
@@ -28,8 +29,8 @@ Artisan::command('decorator', function () {
 });
 
 Artisan::command('strategy', function () {
-    $logger = new App( new LogToDatabase() );
-    $result = $logger->log();
+    $logStrategy = new App( new logTofile() );
+    $result = $logStrategy->log();
 
     dd($result);
 
