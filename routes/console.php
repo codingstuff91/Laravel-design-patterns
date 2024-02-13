@@ -1,9 +1,8 @@
 <?php
 
-use App\Patterns\Behavioral\Strategy\App;
-use App\Patterns\Behavioral\Strategy\TransportCostEstimator\Bike;
+use App\Patterns\Behavioral\Strategy\Logger\App;
+use App\Patterns\Behavioral\Strategy\Logger\LogToDatabase;
 use App\Patterns\Behavioral\Strategy\TransportCostEstimator\Bus;
-use App\Patterns\Behavioral\Strategy\TransportCostEstimator\Taxi;
 use App\Patterns\Behavioral\Strategy\TransportCostEstimator\Transport;
 use App\Patterns\Behavioral\TemplateMethod\BigMac;
 use App\Patterns\Creational\Builder\MargarithaBuilder;
@@ -29,12 +28,15 @@ Artisan::command('decorator', function () {
 });
 
 Artisan::command('strategy', function () {
-//    $result = (new App())->log();
+    $logger = new App( new LogToDatabase() );
+    $result = $logger->log();
 
-    $transport = new transport(new Bus());
-    $calculateTravelCost = $transport->calculateCost();
+    dd($result);
 
-    dd($calculateTravelCost);
+//    $transport = new transport(new Bus());
+//    $calculateTravelCost = $transport->calculateCost();
+//
+//    dd($calculateTravelCost);
 });
 
 Artisan::command('factory', function () {

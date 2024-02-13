@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Patterns\Behavioral\Strategy;
+namespace App\Patterns\Behavioral\Strategy\Logger;
 
 class LogToDatabase implements Loggable
 {
