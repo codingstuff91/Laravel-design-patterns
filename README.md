@@ -1,6 +1,6 @@
 ## About this project
 
-This project was made to practise and learn the main design patterns within a Laravel framework architecture
+This project was made to learn and practice the main OOP design patterns within a Laravel framework architecture
 
 ## Design patterns covered
 

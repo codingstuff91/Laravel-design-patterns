@@ -1,17 +1,15 @@
 <?php
 
-use App\Patterns\Builder\MargarithaBuilder;
-use App\Patterns\Builder\PizzaBuilder;
+use App\Patterns\Behavioral\Strategy\App;
+use App\Patterns\Behavioral\TemplateMethod\BigMac;
+use App\Patterns\Creational\Builder\MargarithaBuilder;
+use App\Patterns\Creational\Builder\PizzaBuilder;
+use App\Patterns\Creational\FactoryAndStrategy\RegisterFactory;
+use App\Patterns\Creational\Manager\SushiDeliveryManager;
 use App\Patterns\Decorator\BasicInspectionAndBatteryChange;
 use App\Patterns\Decorator\BasicRevisionAndTechnicalControl;
-use App\Patterns\Decorator\CarMaintenance\CalculateMaintenanceCost;
-use App\Patterns\Decorator\Drinks\StarboucCoffee;
 use App\Patterns\Decorator\RevisionCalculator;
-use App\Patterns\FactoryAndStrategy\RegisterFactory;
 use App\Patterns\Manager\PizzaManager;
-use App\Patterns\Manager\SushiDeliveryManager;
-use App\Patterns\Strategy\App;
-use App\Patterns\TemplateMethod\BigMac;
 use Illuminate\Support\Facades\Artisan;
 
 Artisan::command('decorator', function () {

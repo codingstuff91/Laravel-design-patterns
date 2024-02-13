@@ -2,8 +2,8 @@
 
 namespace App\Providers;
 
-use App\Patterns\Manager\ExchangeRatesManager;
-use App\Patterns\Manager\SushiDeliveryManager;
+use App\Patterns\Creational\Manager\ExchangeRatesManager;
+use App\Patterns\Creational\Manager\SushiDeliveryManager;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
 
