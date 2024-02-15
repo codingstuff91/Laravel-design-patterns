@@ -2,9 +2,9 @@
 
 namespace App\Patterns\Behavioral\Strategy\TransportCostEstimator;
 
-class Bike implements CalculationStrategy
+class Bike implements Transportable
 {
-    public function travelCost(int $distance)
+    public function getCost(int $distance)
     {
         return 0;
     }

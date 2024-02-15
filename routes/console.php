@@ -29,15 +29,15 @@ Artisan::command('decorator', function () {
 });
 
 Artisan::command('strategy', function () {
-    $logStrategy = new App( new logTofile() );
-    $result = $logStrategy->log();
-
-    dd($result);
-
-//    $transport = new transport(new Bus());
-//    $calculateTravelCost = $transport->calculateCost();
+//    $logStrategy = new App( new logTofile() );
+//    $result = $logStrategy->log();
 //
-//    dd($calculateTravelCost);
+//    dd($result);
+
+    $transport = new transport(new Bus());
+    $calculateTravelCost = $transport->defineCost();
+
+    dd($calculateTravelCost);
 });
 
 Artisan::command('factory', function () {

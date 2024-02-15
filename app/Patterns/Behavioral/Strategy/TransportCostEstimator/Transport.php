@@ -4,16 +4,16 @@ namespace App\Patterns\Behavioral\Strategy\TransportCostEstimator;
 
 class Transport
 {
-    public function __construct(private CalculationStrategy $calculation)
+    public function __construct(private Transportable $transport)
     {
         //
     }
 
-    public function calculateCost()
+    public function defineCost()
     {
         $distanceToAirport = $this->calculateTravelDistanceFromAirport();
 
-        return "cout du trajet : " . $this->calculation->travelCost($distanceToAirport) . " euros";
+        return "cout du trajet : " . $this->transport->getCost($distanceToAirport) . " euros";
     }
 
     private function calculateTravelDistanceFromAirport()
