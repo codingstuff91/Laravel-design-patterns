@@ -5,7 +5,7 @@ namespace App\Patterns\Structural\Decorator\Drinks;
 use App\Patterns\Structural\Decorator\Drinks\Decorators\Chantilly;
 use App\Patterns\Structural\Decorator\Drinks\Decorators\Chocolate;
 
-class StarboucCoffee
+class StarboukCoffee
 {
     public function calculateOrderCost()
     {
