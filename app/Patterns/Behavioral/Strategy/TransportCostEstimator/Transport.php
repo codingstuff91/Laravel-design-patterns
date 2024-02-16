@@ -11,13 +11,6 @@ class Transport
 
     public function defineCost()
     {
-        $distanceToAirport = $this->calculateTravelDistanceFromAirport();
-
-        return "cout du trajet : " . $this->transport->getCost($distanceToAirport) . " euros";
-    }
-
-    private function calculateTravelDistanceFromAirport()
-    {
-        return 25;
+        return "cout du trajet : " . $this->transport->getCost(25) . " euros";
     }
 }
