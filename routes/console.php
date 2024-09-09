@@ -1,8 +1,5 @@
 <?php
 
-use App\Patterns\Behavioral\Strategy\Logger\App;
-use App\Patterns\Behavioral\Strategy\Logger\LogToDatabase;
-use App\Patterns\Behavioral\Strategy\Logger\LogToFile;
 use App\Patterns\Behavioral\Strategy\TransportCostEstimator\Bus;
 use App\Patterns\Behavioral\Strategy\TransportCostEstimator\Transport;
 use App\Patterns\Behavioral\TemplateMethod\BigMac;
@@ -10,10 +7,6 @@ use App\Patterns\Creational\Builder\MargarithaBuilder;
 use App\Patterns\Creational\Builder\PizzaBuilder;
 use App\Patterns\Creational\FactoryAndStrategy\RegisterFactory;
 use App\Patterns\Creational\Manager\SushiDeliveryManager;
-use App\Patterns\Decorator\BasicInspectionAndBatteryChange;
-use App\Patterns\Decorator\BasicRevisionAndTechnicalControl;
-use App\Patterns\Decorator\RevisionCalculator;
-use App\Patterns\Manager\PizzaManager;
 use Illuminate\Support\Facades\Artisan;
 
 Artisan::command('decorator', function () {
@@ -34,7 +27,7 @@ Artisan::command('strategy', function () {
 //
 //    dd($result);
 
-    $transport = new transport(new Bus());
+    $transport = new Transport(new Bus());
     $calculateTravelCost = $transport->defineCost();
 
     dd($calculateTravelCost);

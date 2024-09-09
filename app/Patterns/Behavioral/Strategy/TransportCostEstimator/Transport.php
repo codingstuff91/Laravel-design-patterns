@@ -9,7 +9,7 @@ class Transport
         //
     }
 
-    public function defineCost()
+    public function defineCost(): string
     {
         return "cout du trajet : " . $this->transport->getCost(25) . " euros";
     }
