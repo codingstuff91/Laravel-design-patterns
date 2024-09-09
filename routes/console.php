@@ -3,6 +3,7 @@
 use App\Patterns\Behavioral\Strategy\TransportCostEstimator\Bus;
 use App\Patterns\Behavioral\Strategy\TransportCostEstimator\Transport;
 use App\Patterns\Behavioral\TemplateMethod\BigMac;
+use App\Patterns\Behavioral\TemplateMethod\VeggieBigMac;
 use App\Patterns\Creational\Builder\MargarithaBuilder;
 use App\Patterns\Creational\Builder\PizzaBuilder;
 use App\Patterns\Creational\FactoryAndStrategy\RegisterFactory;
@@ -40,9 +41,9 @@ Artisan::command('factory', function () {
 });
 
 Artisan::command('template', function () {
-    $burger = (new BigMac())->prepare();
+    $burger1 = (new BigMac())->prepare();
 
-//    $burger = (new VeggieBigMac())->prepare();
+    $burger2 = (new VeggieBigMac())->prepare();
 });
 
 Artisan::command('builder', function () {

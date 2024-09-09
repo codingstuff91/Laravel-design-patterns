@@ -4,16 +4,7 @@ namespace App\Patterns\Behavioral\TemplateMethod;
 
 class BigMac extends Burger
 {
-    public function prepare()
-    {
-        return $this
-            ->bakeBuns()
-            ->addSauce()
-            ->addPrimaryTopping()
-            ->addCheese();
-    }
-
-    public function addPrimaryTopping()
+    public function addPrimaryTopping(): self
     {
         var_dump('A big slice of beef meet');
 
