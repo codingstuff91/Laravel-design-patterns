@@ -13,21 +13,21 @@ abstract class Burger
             ->addCheese();
     }
 
-    protected function bakeBuns() {
+    protected function bakeBuns(): self {
         var_dump('Baking the buns');
 
         return $this;
     }
 
-    protected function addSauce() {
+    protected function addSauce(): self {
         var_dump('Adding the secret sauce');
 
         return $this;
     }
 
-    abstract public function addPrimaryTopping();
+    abstract public function addPrimaryTopping(): self;
 
-    protected function addCheese() {
+    protected function addCheese(): self{
         var_dump('Adding slice of cheese');
 
         return $this;
