@@ -2,7 +2,7 @@
 
 namespace App\Patterns\Structural\Adapter;
 
-class Kindle implements eBookContract
+class Kindle implements EBookContract
 {
     public function turnOn(): void
     {

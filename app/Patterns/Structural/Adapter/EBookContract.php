@@ -2,7 +2,7 @@
 
 namespace App\Patterns\Structural\Adapter;
 
-interface eBookContract
+interface EBookContract
 {
     public function turnOn(): void;
 
