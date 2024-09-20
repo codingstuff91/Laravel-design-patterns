@@ -19,6 +19,8 @@ class MargarithaBuilder implements PizzaBuilderInterface
 
         $this->pizza->setIngredients(['Tomato', 'Mozzarella', 'Basil']);
 
+        var_dump("Ingredients List", $this->pizza->ingredients);
+
         return $this;
     }
 
