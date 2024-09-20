@@ -8,6 +8,8 @@ use App\Patterns\Creational\Builder\MargarithaBuilder;
 use App\Patterns\Creational\Builder\PizzaBuilder;
 use App\Patterns\Creational\FactoryAndStrategy\RegisterFactory;
 use App\Patterns\Creational\Manager\SushiDeliveryManager;
+use App\Patterns\Structural\Adapter\EbookAdapter;
+use App\Patterns\Structural\Adapter\Kindle;
 use Illuminate\Support\Facades\Artisan;
 
 Artisan::command('decorator', function () {
@@ -59,5 +61,9 @@ Artisan::command('manager', function () {
 //    );
 
     echo app(SushiDeliveryManager::class)->deliver();
+});
+
+Artisan::command('adapter', function () {
+    (new EbookAdapter(new Kindle()))->nextPage();
 });
 
